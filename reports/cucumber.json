@@ -1,0 +1,1388 @@
+[
+  {
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Jupiter Toys Website Shopping Page Test",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@jupiterCartPageTest"
+      }
+    ],
+    "uri": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\JupiterCartPageTest.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify product price",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterCartPageTest"
+          }
+        ],
+        "id": "jupiter-toys-website-shopping-page-test;verify-product-price",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 15185
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the cart count should be 0",
+            "result": {
+              "status": "passed",
+              "duration": 935
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-cart-page-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to shopping page",
+            "result": {
+              "status": "passed",
+              "duration": 2053
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I add the product Smiley Bear to cart",
+            "result": {
+              "status": "passed",
+              "duration": 2729
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-shopping-page-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the cart count should be 1",
+            "result": {
+              "status": "passed",
+              "duration": 948
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-cart-page-steps.js:6"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "jupiter-toys-website-shopping-page-test"
+  },
+  {
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Jupiter Toys Contact Page Test",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@jupiterContactPageTest"
+      }
+    ],
+    "uri": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\JupiterContactPageTest.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify The Mandatory Field Error Messages",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-the-mandatory-field-error-messages",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 7214
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "passed",
+              "duration": 2076
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on submit",
+            "result": {
+              "status": "passed",
+              "duration": 2118
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the mandatory field error messages",
+            "result": {
+              "status": "passed",
+              "duration": 3718
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Munikrishna, mrama@planittesting.com, 8888 and None fields",
+            "result": {
+              "status": "failed",
+              "duration": 98634456,
+              "error_message": "Error: function timed out after 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\user_code_runner.js:91:22)\n    at ontimeout (timers.js:365:14)\n    at tryOnTimeout (timers.js:237:5)\n    at Timer.listOnTimeout (timers.js:207:5)"
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should not see the mandatory field error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:44"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify The Mandatory Field Error Messages",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-the-mandatory-field-error-messages",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "failed",
+              "duration": 123,
+              "error_message": "Error: ERROR: Unable to locate element: \"#telephone\" using: css selector\n    at Object.setValue (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\page-object\\command-wrapper.js:117:25)\n    at Object.enterTelNum (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterContactPage.js:24:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:40:14)\n    at checkErrors (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:232:38)\n    at Promise (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:263:7)\n    at NightwatchApi.start (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:216:12)\n    at Object.api.then (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:48:19)\n    at Object.tryCatcher (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at doThenable (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\thenables.js:63:38)\n    at tryConvertToPromise (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\thenables.js:28:20)\n    at Function.Promise.cast (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\promise.js:193:15)\n    at race (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\race.js:36:17)\n    at Function.Promise.race (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\race.js:42:12)"
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on submit",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the mandatory field error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Santosh, snanduri@planittesting.com, 9999 and Nightwatch fields",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should not see the mandatory field error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:44"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Verify Invalid Field Error Message",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-invalid-field-error-message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 1
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "failed",
+              "duration": 857,
+              "error_message": "ERROR: Unable to locate element: \"#message\" using: css selector\n    at Object.setValue (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\page-object\\command-wrapper.js:117:25)\n    at Object.enterMessage (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterContactPage.js:30:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:41:14)"
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Munikrishna, mramaplanittesting.com, aaaa and None fields",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the validation error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:22"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Verify Invalid Field Error Message",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-invalid-field-error-message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "failed",
+              "duration": 15,
+              "error_message": "Timed out while waiting for element <#message> to be present for 1000 milliseconds. - Expected \"visible\" but got: \"not found\"\n    at Object.enterMessage (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterContactPage.js:29:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:41:14)"
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Santosh, snanduri@planittestingcom, bbbb and Nightwatch fields",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the validation error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:22"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Verify the Successful submission",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-the-successful-submission",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 10
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "failed",
+              "duration": 1025,
+              "error_message": "Timed out while waiting for element <a[href$='contact']> to be present for 1000 milliseconds. - Expected \"visible\" but got: \"not found\"\n    at Object.navigateToContactPage (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterBasePage.js:13:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:28:18)"
+            },
+            "line": 31,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Dan, dan@jupiter.com,  and Hello fields",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on submit",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see successful message",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:29"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "jupiter-toys-contact-page-test"
+  },
+  {
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Jupiter Toys Website Login Test",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@jupiterLoginPageTest"
+      }
+    ],
+    "uri": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\JupiterLoginPageTests.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify The Invalid Login Message",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterLoginPageTest"
+          },
+          {
+            "line": 8,
+            "name": "@MediumRisk"
+          }
+        ],
+        "id": "jupiter-toys-website-login-test;verify-the-invalid-login-message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 12
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to login page",
+            "result": {
+              "status": "failed",
+              "duration": 4,
+              "error_message": "Error: ERROR: Unable to locate element: \"Login\" using: link text\n    at Object.navigateToLoginPage (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterBasePage.js:19:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:18:18)\n    at checkErrors (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:232:38)\n    at ClientManager.completeHandler (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:246:9)\n    at emitTwo (events.js:106:13)\n    at ClientManager.emit (events.js:191:7)\n    at Nightwatch.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\runner\\clientmanager.js:41:10)\n    at Nightwatch.g (events.js:291:16)\n    at emitTwo (events.js:106:13)\n    at Nightwatch.emit (events.js:191:7)\n    at Nightwatch.finished (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:275:8)\n    at C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:225:10\n    at AsyncTree.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:209:9)\n    at AsyncTree.g (events.js:291:16)\n    at emitNone (events.js:86:13)\n    at AsyncTree.emit (events.js:185:7)\n    at AsyncTree.done (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:170:8)\n    at AsyncTree.walkDown (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:88:12)"
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Enter xxx and xxx",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the Login button",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Login should not be succesful",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:19"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Verify a Valid Login",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterLoginPageTest"
+          },
+          {
+            "line": 19,
+            "name": "@HighRisk"
+          }
+        ],
+        "id": "jupiter-toys-website-login-test;verify-a-valid-login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 5
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to login page",
+            "result": {
+              "status": "failed",
+              "duration": 2,
+              "error_message": "Error: ERROR: Unable to locate element: \"Login\" using: link text\n    at Object.navigateToLoginPage (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterBasePage.js:19:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:18:18)\n    at checkErrors (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:232:38)\n    at ClientManager.completeHandler (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:246:9)\n    at emitTwo (events.js:106:13)\n    at ClientManager.emit (events.js:191:7)\n    at Nightwatch.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\runner\\clientmanager.js:41:10)\n    at Nightwatch.g (events.js:291:16)\n    at emitTwo (events.js:106:13)\n    at Nightwatch.emit (events.js:191:7)\n    at Nightwatch.finished (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:275:8)\n    at C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:225:10\n    at AsyncTree.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:209:9)\n    at AsyncTree.g (events.js:291:16)\n    at emitNone (events.js:86:13)\n    at AsyncTree.emit (events.js:185:7)\n    at AsyncTree.done (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:170:8)\n    at AsyncTree.walkDown (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:88:12)"
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Enter user1 and letmein",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the Login button",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the user Menu",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-user-home-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be able to see the welcome user1 message",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-user-home-page-steps.js:13"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "jupiter-toys-website-login-test"
+  },
+  {
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Jupiter Toys Website Shopping Page Test",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@jupiterCartPageTest"
+      }
+    ],
+    "uri": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\JupiterCartPageTest.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify product price",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterCartPageTest"
+          }
+        ],
+        "id": "jupiter-toys-website-shopping-page-test;verify-product-price",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 9759
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the cart count should be 0",
+            "result": {
+              "status": "passed",
+              "duration": 787
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-cart-page-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to shopping page",
+            "result": {
+              "status": "passed",
+              "duration": 1816
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I add the product Smiley Bear to cart",
+            "result": {
+              "status": "passed",
+              "duration": 2303
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-shopping-page-steps.js:6"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the cart count should be 1",
+            "result": {
+              "status": "passed",
+              "duration": 730
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-cart-page-steps.js:6"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "jupiter-toys-website-shopping-page-test"
+  },
+  {
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Jupiter Toys Contact Page Test",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@jupiterContactPageTest"
+      }
+    ],
+    "uri": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\JupiterContactPageTest.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify The Mandatory Field Error Messages",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-the-mandatory-field-error-messages",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 3450
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "passed",
+              "duration": 1705
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on submit",
+            "result": {
+              "status": "passed",
+              "duration": 1742
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the mandatory field error messages",
+            "result": {
+              "status": "passed",
+              "duration": 2426
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Munikrishna, mrama@planittesting.com, 8888 and None fields",
+            "result": {
+              "status": "passed",
+              "duration": 7369
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should not see the mandatory field error messages",
+            "result": {
+              "status": "passed",
+              "duration": 1081
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:44"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify The Mandatory Field Error Messages",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-the-mandatory-field-error-messages",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 2667
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "passed",
+              "duration": 1757
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on submit",
+            "result": {
+              "status": "passed",
+              "duration": 1748
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the mandatory field error messages",
+            "result": {
+              "status": "passed",
+              "duration": 2234
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Santosh, snanduri@planittesting.com, 9999 and Nightwatch fields",
+            "result": {
+              "status": "failed",
+              "duration": 98629966,
+              "error_message": "Error: function timed out after 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\cucumber\\lib\\user_code_runner.js:91:22)\n    at ontimeout (timers.js:365:14)\n    at tryOnTimeout (timers.js:237:5)\n    at Timer.listOnTimeout (timers.js:207:5)"
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should not see the mandatory field error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:44"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Verify Invalid Field Error Message",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-invalid-field-error-message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "failed",
+              "duration": 345,
+              "error_message": "Timed out while waiting for element <#email> to be present for 1000 milliseconds. - Expected \"visible\" but got: \"not found\"\n    at Object.enterEmail (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterContactPage.js:17:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:39:14)"
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Munikrishna, mramaplanittesting.com, aaaa and None fields",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the validation error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:22"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Verify Invalid Field Error Message",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-invalid-field-error-message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "failed",
+              "duration": 8,
+              "error_message": "Error: ERROR: Unable to locate element: \"#email\" using: css selector\n    at Object.setValue (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\page-object\\command-wrapper.js:117:25)\n    at Object.enterEmail (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterContactPage.js:18:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:39:14)\n    at checkErrors (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:232:38)\n    at Promise (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:263:7)\n    at NightwatchApi.start (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:216:12)\n    at Object.api.then (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:48:19)\n    at Object.tryCatcher (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at doThenable (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\thenables.js:63:38)\n    at tryConvertToPromise (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\thenables.js:28:20)\n    at Function.Promise.cast (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\promise.js:193:15)\n    at race (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\race.js:36:17)\n    at Function.Promise.race (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\race.js:42:12)"
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Santosh, snanduri@planittestingcom, bbbb and Nightwatch fields",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see the validation error messages",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:22"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Verify the Successful submission",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterContactPageTest"
+          }
+        ],
+        "id": "jupiter-toys-contact-page-test;verify-the-successful-submission",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "failed",
+              "duration": 4,
+              "error_message": "Error: ERROR: Unable to locate element: \"#telephone\" using: css selector\n    at Object.setValue (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\page-object\\command-wrapper.js:117:25)\n    at Object.enterTelNum (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterContactPage.js:24:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:40:14)\n    at checkErrors (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:232:38)\n    at Promise (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:263:7)\n    at NightwatchApi.start (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:216:12)\n    at Object.api.then (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:48:19)\n    at Object.tryCatcher (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at doThenable (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\thenables.js:63:38)\n    at tryConvertToPromise (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\thenables.js:28:20)\n    at Function.Promise.cast (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\promise.js:193:15)\n    at race (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\race.js:36:17)\n    at Function.Promise.race (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\bluebird\\js\\release\\race.js:42:12)"
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to contact page",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I enter the values for Dan, dan@jupiter.com,  and Hello fields",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:36"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click on submit",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should see successful message",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-contact-page-steps.js:29"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "jupiter-toys-contact-page-test"
+  },
+  {
+    "keyword": "Feature",
+    "line": 3,
+    "name": "Jupiter Toys Website Login Test",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@jupiterLoginPageTest"
+      }
+    ],
+    "uri": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\JupiterLoginPageTests.feature",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify The Invalid Login Message",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterLoginPageTest"
+          },
+          {
+            "line": 8,
+            "name": "@MediumRisk"
+          }
+        ],
+        "id": "jupiter-toys-website-login-test;verify-the-invalid-login-message",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 21
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to login page",
+            "result": {
+              "status": "failed",
+              "duration": 21,
+              "error_message": "Error: ERROR: Unable to locate element: \"Login\" using: link text\n    at Object.navigateToLoginPage (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterBasePage.js:19:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:18:18)\n    at checkErrors (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:232:38)\n    at ClientManager.completeHandler (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:246:9)\n    at emitTwo (events.js:106:13)\n    at ClientManager.emit (events.js:191:7)\n    at Nightwatch.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\runner\\clientmanager.js:41:10)\n    at Nightwatch.g (events.js:291:16)\n    at emitTwo (events.js:106:13)\n    at Nightwatch.emit (events.js:191:7)\n    at Nightwatch.finished (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:275:8)\n    at C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:225:10\n    at AsyncTree.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:209:9)\n    at AsyncTree.g (events.js:291:16)\n    at emitNone (events.js:86:13)\n    at AsyncTree.emit (events.js:185:7)\n    at AsyncTree.done (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:170:8)\n    at AsyncTree.walkDown (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:88:12)"
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Enter xxx and xxx",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the Login button",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "Login should not be succesful",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:19"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Verify a Valid Login",
+        "tags": [
+          {
+            "line": 1,
+            "name": "@jupiterLoginPageTest"
+          },
+          {
+            "line": 19,
+            "name": "@HighRisk"
+          }
+        ],
+        "id": "jupiter-toys-website-login-test;verify-a-valid-login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "I open Jupiter's home page",
+            "result": {
+              "status": "passed",
+              "duration": 10
+            },
+            "isBackground": true,
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I navigate to login page",
+            "result": {
+              "status": "failed",
+              "duration": 3,
+              "error_message": "Error: ERROR: Unable to locate element: \"Login\" using: link text\n    at Object.navigateToLoginPage (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\JupiterPageObjects\\jupiterBasePage.js:19:14)\n    at World.When (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:18:18)\n    at checkErrors (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:232:38)\n    at ClientManager.completeHandler (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch-cucumber\\lib\\nightwatch-api.js:246:9)\n    at emitTwo (events.js:106:13)\n    at ClientManager.emit (events.js:191:7)\n    at Nightwatch.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\runner\\clientmanager.js:41:10)\n    at Nightwatch.g (events.js:291:16)\n    at emitTwo (events.js:106:13)\n    at Nightwatch.emit (events.js:191:7)\n    at Nightwatch.finished (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:275:8)\n    at C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\index.js:225:10\n    at AsyncTree.<anonymous> (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:209:9)\n    at AsyncTree.g (events.js:291:16)\n    at emitNone (events.js:86:13)\n    at AsyncTree.emit (events.js:185:7)\n    at AsyncTree.done (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:170:8)\n    at AsyncTree.walkDown (C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\node_modules\\nightwatch\\lib\\core\\queue.js:88:12)"
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-base-page-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Enter user1 and letmein",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the Login button",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-login-page-steps.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I click the user Menu",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-user-home-page-steps.js:8"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be able to see the welcome user1 message",
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "match": {
+              "location": "C:\\Users\\mrama\\WebstormProjects\\nightwatch-cucumber\\features\\step_definitions\\jupiter-user-home-page-steps.js:13"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "jupiter-toys-website-login-test"
+  }
+]
